@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ProDesign">
+    <meta name="theme-color" content="#0d6efd">
+    <title>ProDesign - تصميم احترافي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top shadow-sm" style="background: linear-gradient(135deg, #0d6efd 0%, #0857ca 100%);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="#home">
+                <i class="bi bi-rocket-takeoff me-2"></i>ProDesign
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">المشاريع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero-section py-5 text-center text-white">
+        <div class="container py-5">
+            <div class="fade-in-up">
+                <h1 class="display-3 fw-bold mb-4">مرحباً بك في عالم التصميم الاحترافي</h1>
+                <p class="lead fs-5 mb-5">اكتشف أحدث اتجاهات التصميم والابتكار. نحن ملتزمون بتقديم أفضل الموارد والأدوات لتحسين مشاريعك الإبداعية.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <button class="btn btn-light btn-lg px-5 py-3 fw-semibold btn-hover" onclick="smoothScroll('services')">
+                        <i class="bi bi-play-fill me-2"></i>ابدأ الآن
+                    </button>
+                    <button class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold btn-hover-outline" onclick="smoothScroll('contact')">
+                        <i class="bi bi-info-circle me-2"></i>المزيد من المعلومات
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Alert Section ===== -->
+    <section class="container-fluid py-3">
+        <div class="container">
+            <div class="alert alert-success alert-dismissible fade show slide-in" role="alert">
+                <i class="bi bi-check-circle me-2"></i>
+                <strong>مرحباً!</strong> شكراً لزيارتك هذا الموقع الرائع.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">
+                <i class="bi bi-stars text-warning me-3"></i>خدماتنا المميزة
+            </h2>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-pencil-square fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">تصميم الويب</h5>
+                        <p class="text-muted">تصاميم احترافية وعصرية تناسب جميع الأجهزة والشاشات.</p>
+                        <button class="btn btn-primary btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-code-square fs-1 text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">تطوير المتقدم</h5>
+                        <p class="text-muted">برمجة احترافية باستخدام أحدث التقنيات والأدوات.</p>
+                        <button class="btn btn-success btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-phone fs-1 text-info"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">التطبيقات الجوالة</h5>
+                        <p class="text-muted">تطبيقات جوالة متقدمة متوافقة مع iOS و Android.</p>
+                        <button class="btn btn-info btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-rocket-takeoff fs-1 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">الأداء والتحسين</h5>
+                        <p class="text-muted">تحسين السرعة والأداء لأقصى كفاءة.</p>
+                        <button class="btn btn-warning btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-shield-lock fs-1 text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">الأمان والحماية</h5>
+                        <p class="text-muted">حماية عالية المستوى لبيانات وخصوصية المشروع.</p>
+                        <button class="btn btn-danger btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-headset fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">الدعم الفني</h5>
+                        <p class="text-muted">دعم فني متواصل ومحترف لجميع المشاريع.</p>
+                        <button class="btn btn-primary btn-sm mt-3">اعرف المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ Section ===== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">الأسئلة الشائعة</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3 accordion-fade">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>كيف أبدأ معك؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">يمكنك التواصل معنا من خلال نموذج التواصل أو البريد الإلكتروني. سنقوم بالرد عليك في أسرع وقت ممكن.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3 accordion-fade">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>ما هي أسعاركم؟
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">الأسعار تختلف حسب طبيعة المشروع والمتطلبات. سنقدم لك عرض سعر خاص بعد التقييم.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3 accordion-fade">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>كم وقت يستغرق المشروع؟
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">المدة تعتمد على حجم وتعقيد المشروع. عادة ما تتراوح بين أسبوع إلى عدة أسابيع.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">مهاراتنا ومعرفتنا</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- HTML/CSS -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">HTML/CSS</span>
+                            <span class="badge bg-success">95%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success skill-bar" role="progressbar" style="width: 95%;" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">JavaScript</span>
+                            <span class="badge bg-warning text-dark">90%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning skill-bar" role="progressbar" style="width: 90%;" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">Bootstrap</span>
+                            <span class="badge bg-primary">92%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary skill-bar" role="progressbar" style="width: 92%;" data-width="92"></div>
+                        </div>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">التصميم والرسومات</span>
+                            <span class="badge bg-info text-dark">88%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info skill-bar" role="progressbar" style="width: 88%;" data-width="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">التصميم المتجاوب</span>
+                            <span class="badge bg-danger">96%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger skill-bar" role="progressbar" style="width: 96%;" data-width="96"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio Section ===== -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">معرض أعمالنا</h2>
+            
+            <div class="row g-4">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">موقع تجارة إلكترونية</h6>
+                            <small class="text-muted">HTML • CSS • JavaScript</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">تطبيق إدارة المهام</h6>
+                            <small class="text-muted">Bootstrap • JavaScript • API</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">موقع المدونة الحديث</h6>
+                            <small class="text-muted">HTML • CSS • Responsive</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">لوحة التحكم</h6>
+                            <small class="text-muted">Bootstrap • Charts • Analytics</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">تطبيق الطقس</h6>
+                            <small class="text-muted">API Integration • Animations</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <i class="bi bi-image fs-1 text-secondary"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-light btn-sm">
+                                <i class="bi bi-zoom-in me-2"></i>عرض المشروع
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">موقع الخدمات</h6>
+                            <small class="text-muted">Responsive • SEO • Modern</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Form Section ===== -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">اتصل بنا</h2>
+            
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info p-4 bg-light rounded">
+                        <div class="mb-4">
+                            <i class="bi bi-telephone fs-3 text-primary mb-3 d-block"></i>
+                            <h6 class="fw-bold">الهاتف</h6>
+                            <p class="text-muted">+212 6 12 34 56 78</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-envelope fs-3 text-success mb-3 d-block"></i>
+                            <h6 class="fw-bold">البريد الإلكتروني</h6>
+                            <p class="text-muted">info@prodesign.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt fs-3 text-danger mb-3 d-block"></i>
+                            <h6 class="fw-bold">العنوان</h6>
+                            <p class="text-muted">الدار البيضاء، المغرب</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <form class="contact-form p-4 bg-light rounded" id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">الاسم الكامل</label>
+                            <input type="text" class="form-control border-primary-subtle" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">البريد الإلكتروني</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-primary text-white">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control border-primary-subtle" placeholder="بريدك@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">رقم الهاتف</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-primary text-white">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <input type="tel" class="form-control border-primary-subtle" placeholder="+212 6 12 34 56 78" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">الموضوع</label>
+                            <select class="form-select border-primary-subtle" required>
+                                <option selected>اختر الموضوع...</option>
+                                <option value="support">دعم فني</option>
+                                <option value="sales">عرض سعر</option>
+                                <option value="inquiry">استفسار عام</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">الرسالة</label>
+                            <textarea class="form-control border-primary-subtle" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                أوافق على سياسة الخصوصية وشروط الاستخدام
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold btn-submit">
+                            <i class="bi bi-send me-2"></i>إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row mb-4">
+                <!-- Brand -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 fw-bold">
+                        <i class="bi bi-rocket-takeoff me-2"></i>ProDesign
+                    </h5>
+                    <p class="text-muted small">شركة متخصصة في تصميم وتطوير المواقع والتطبيقات الحديثة.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="mb-3 fw-bold">الروابط السريعة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#home" class="text-light text-decoration-none footer-link">الرئيسية</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#services" class="text-light text-decoration-none footer-link">الخدمات</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#portfolio" class="text-light text-decoration-none footer-link">المشاريع</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contact" class="text-light text-decoration-none footer-link">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="mb-3 fw-bold">تابعنا</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5 social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center text-muted small">
+                <p class="mb-0">© 2025 ProDesign. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" title="اذهب إلى الأعلى">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

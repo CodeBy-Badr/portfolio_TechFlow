@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TechFlow">
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="description" content="TechFlow Portfolio - Explore our recent projects and case studies showcasing web design and development expertise.">
+    <meta name="keywords" content="Portfolio, Projects, Case Studies, Web Design, Development">
+    <title>Our Portfolio - TechFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top shadow-sm" style="background: linear-gradient(135deg, #0d6efd 0%, #0857ca 100%);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="index.html#home">
+                <i class="bi bi-lightning-charge me-2"></i>TechFlow
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero-section py-5 text-center text-white">
+        <div class="container py-5">
+            <div class="fade-in-up">
+                <h1 class="display-3 fw-bold mb-4">Our Portfolio</h1>
+                <p class="lead fs-5 mb-4">Real Projects Built With HTML, CSS, Bootstrap, Tailwind, PHP & MySQL</p>
+                
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                    <ol class="breadcrumb bg-transparent">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active text-white">Portfolio</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio Section ===== -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">Recent Projects</h2>
+            
+            <div class="row g-4">
+                <!-- Project 1: Trading Platform -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="bi bi-graph-up-arrow fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-trading.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">Trading Platform</h6>
+                            <small class="text-muted d-block mb-2">HTML • CSS • Bootstrap • PHP • MySQL</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-primary">Frontend</span>
+                                <span class="badge bg-success">Backend</span>
+                                <span class="badge bg-info">Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Corporate Template -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="bi bi-briefcase fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-corporate.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">Corporate Template</h6>
+                            <small class="text-muted d-block mb-2">HTML • CSS • Bootstrap • JavaScript</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-warning text-dark">Design</span>
+                                <span class="badge bg-secondary">Responsive</span>
+                                <span class="badge bg-danger">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Admin Dashboard -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="bi bi-speedometer2 fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-dashboard.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">Admin Dashboard</h6>
+                            <small class="text-muted d-block mb-2">Bootstrap • Tailwind • PHP • MySQL</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-info">Dashboard</span>
+                                <span class="badge bg-success">Analytics</span>
+                                <span class="badge bg-warning text-dark">Admin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Commerce Website -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="bi bi-shop fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-ecommerce.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">E-Commerce Store</h6>
+                            <small class="text-muted d-block mb-2">HTML • CSS • Bootstrap • PHP • MySQL</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-danger">Shop</span>
+                                <span class="badge bg-success">Cart</span>
+                                <span class="badge bg-primary">Payments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Contact Management System -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="bi bi-envelope fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-contact.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">Contact Management</h6>
+                            <small class="text-muted d-block mb-2">Bootstrap • Tailwind • PHP • MySQL</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-info">CRM</span>
+                                <span class="badge bg-secondary">Forms</span>
+                                <span class="badge bg-success">Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Responsive Website -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative portfolio-card">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <i class="bi bi-globe fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="project-responsive.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">Responsive Website</h6>
+                            <small class="text-muted d-block mb-2">HTML • CSS • Tailwind • JavaScript</small>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-warning text-dark">Web Design</span>
+                                <span class="badge bg-primary">Mobile</span>
+                                <span class="badge bg-success">SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Project Modals ===== -->
+    
+    <!-- Modal 1: E-Commerce Platform -->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">E-Commerce Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-shop fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">A fully-featured e-commerce platform built with React, Node.js, and MongoDB. The platform includes user authentication, product catalog, shopping cart, payment processing, and admin dashboard for inventory management.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>User Authentication</strong> - Secure login & registration</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Product Catalog</strong> - Advanced search & filtering</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Shopping Cart</strong> - Persistent cart management</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Payment Integration</strong> - Stripe integration</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Admin Dashboard</strong> - Inventory & order management</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-primary">React</span>
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-info">MongoDB</span>
+                        <span class="badge bg-warning text-dark">Express</span>
+                        <span class="badge bg-danger">Stripe</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>30% increase in user engagement</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>25% improvement in conversion rate</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>Reduced page load time to <1s</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Chat Application -->
+    <div class="modal fade" id="projectModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Chat Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-chat-dots fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">A real-time chat application built with Vue.js, Firebase, and WebSocket technology. Users can create accounts, start conversations, share images, and communicate in real-time with other users.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Real-time Messaging</strong> - WebSocket-powered instant chat</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>User Profiles</strong> - Custom avatars and status</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Image Sharing</strong> - Upload & share media</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Group Chats</strong> - Create & manage groups</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Push Notifications</strong> - Stay informed of new messages</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-info">Vue.js</span>
+                        <span class="badge bg-warning text-dark">Firebase</span>
+                        <span class="badge bg-secondary">WebSocket</span>
+                        <span class="badge bg-success">Real-time DB</span>
+                        <span class="badge bg-danger">Cloud Storage</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>5000+ active users</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>99.9% uptime achieved</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i><100ms message latency</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Analytics Dashboard -->
+    <div class="modal fade" id="projectModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Analytics Dashboard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-graph-up fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">An interactive analytics dashboard providing real-time insights into business metrics. Built with React and Chart.js, it displays sales data, user behavior, and performance metrics through intuitive visualizations.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Real-time Data</strong> - Live metric updates</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Multiple Chart Types</strong> - Line, bar, pie, and more</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Custom Reports</strong> - Generate & export reports</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Date Range Filtering</strong> - Flexible data selection</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Responsive Design</strong> - Works on all devices</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-info">React</span>
+                        <span class="badge bg-success">Chart.js</span>
+                        <span class="badge bg-secondary">REST API</span>
+                        <span class="badge bg-warning text-dark">D3.js</span>
+                        <span class="badge bg-danger">Bootstrap</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>40% faster data analysis</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>1000+ data points visualized</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>500+ reports generated monthly</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Event Management System -->
+    <div class="modal fade" id="projectModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Event Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-calendar-event fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">A comprehensive event management platform built with Next.js and PostgreSQL. It allows organizers to create events, manage registrations, process payments, and attendees to discover and register for events.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Event Creation</strong> - Easy event setup & management</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Registration System</strong> - Ticket booking & management</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Payment Processing</strong> - Stripe integration for payments</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Email Notifications</strong> - Automated confirmations</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Analytics</strong> - Track event performance</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-secondary">Next.js</span>
+                        <span class="badge bg-success">PostgreSQL</span>
+                        <span class="badge bg-danger">Stripe</span>
+                        <span class="badge bg-info">JWT Auth</span>
+                        <span class="badge bg-warning text-dark">SendGrid</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>1500+ events created</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>50000+ attendees registered</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i">$2M+ in ticket sales processed</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Health & Wellness App -->
+    <div class="modal fade" id="projectModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Health & Wellness App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-heart fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">A mobile health and wellness application built with React Native and Firebase. It tracks fitness metrics, provides workout plans, nutrition guidance, and connects users with wellness coaches.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Fitness Tracking</strong> - Monitor workouts & activities</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Workout Plans</strong> - Personalized exercise routines</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Nutrition Tracking</strong> - Calorie & macro monitoring</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Coach Connection</strong> - Connect with wellness experts</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Health Analytics</strong> - Track progress & trends</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-danger">React Native</span>
+                        <span class="badge bg-warning text-dark">Firebase</span>
+                        <span class="badge bg-secondary">Fitness API</span>
+                        <span class="badge bg-info">Expo</span>
+                        <span class="badge bg-success">Redux</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>100k+ downloads</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>4.8-star rating</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>50% user retention rate</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Music Streaming Platform -->
+    <div class="modal fade" id="projectModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Music Streaming Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <i class="bi bi-music-note fs-1 text-white"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary mb-3">Project Overview</h6>
+                    <p class="text-muted">A full-featured music streaming platform built with Node.js backend and React frontend. Users can browse music, create playlists, stream high-quality audio, and discover new artists.</p>
+                    
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Key Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Music Streaming</strong> - High-quality audio streaming</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Playlist Management</strong> - Create & share playlists</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Artist Discovery</strong> - Find new music & artists</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Download for Offline</strong> - Listen without internet</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i><strong>Social Features</strong> - Share & recommend music</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Technologies Used</h6>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-secondary">Node.js</span>
+                        <span class="badge bg-info">React</span>
+                        <span class="badge bg-warning text-dark">AWS S3</span>
+                        <span class="badge bg-danger">WebRTC</span>
+                        <span class="badge bg-success">MongoDB</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mb-3 mt-4">Results</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>200k+ monthly users</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>2M+ songs available</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right me-2"></i>100M+ streams processed</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA Section ===== -->
+    <section class="py-5" style="background: linear-gradient(135deg, #0d6efd 0%, #0857ca 100%);">
+        <div class="container text-center text-white">
+            <h2 class="display-5 fw-bold mb-4">Ready to Start Your Project?</h2>
+            <p class="lead fs-5 mb-5">Let's turn your ideas into reality with our expert team of developers and designers.</p>
+            <a href="index.html#contact" class="btn btn-light btn-lg px-5 py-3 fw-semibold btn-hover">
+                <i class="bi bi-envelope me-2"></i>Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">TechFlow</h6>
+                    <p class="text-muted small">Transform your ideas into digital reality with our professional web design and development solutions.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html#home" class="text-muted text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-muted text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-muted text-decoration-none">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-muted text-decoration-none">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-muted text-decoration-none">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-muted text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <small class="text-muted">&copy; 2024 TechFlow. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">
+                        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a> • 
+                        <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

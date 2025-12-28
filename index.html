@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="bootstrap.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TechFlow">
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="description" content="TechFlow - Modern Web Design & Development Portfolio. Showcase your digital expertise with our stunning professional portfolio website.">
+    <meta name="keywords" content="Web Design, Development, Portfolio, UI/UX, Digital">
+    <title>TechFlow - Web Design & Development Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top shadow-sm" style="background: linear-gradient(135deg, #0d6efd 0%, #0857ca 100%);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="#home">
+                <i class="bi bi-lightning-charge me-2"></i>TechFlow
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero-section py-5 text-center text-white">
+        <div class="container py-5">
+            <div class="fade-in-up">
+                <h1 class="display-3 fw-bold mb-4">Welcome to TechFlow</h1>
+                <p class="lead fs-5 mb-5">Transform Your Ideas Into Digital Reality. Professional Web Design & Development Solutions for Your Business.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="services.html" class="btn btn-light btn-lg px-5 py-3 fw-semibold btn-hover">
+                        <i class="bi bi-play-fill me-2"></i>Get Started
+                    </a>
+                    <button class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold btn-hover-outline" onclick="smoothScroll('contact')">
+                        <i class="bi bi-chat-dots me-2"></i>Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">
+                <i class="bi bi-star text-warning me-3"></i>Our Services
+            </h2>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-palette fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Web Design</h5>
+                        <p class="text-muted">Beautiful, modern designs that captivate your audience and drive engagement.</p>
+                        <a href="services.html" class="btn btn-primary btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-code-square fs-1 text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Development</h5>
+                        <p class="text-muted">Clean, efficient code built with the latest technologies and best practices.</p>
+                        <a href="services.html" class="btn btn-success btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-phone fs-1 text-info"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Mobile Optimization</h5>
+                        <p class="text-muted">Responsive designs that look perfect on every device and screen size.</p>
+                        <a href="services.html" class="btn btn-info btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-rocket-takeoff fs-1 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Performance</h5>
+                        <p class="text-muted">Lightning-fast loading times and optimized performance for better UX.</p>
+                        <a href="services.html" class="btn btn-warning btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-shield-lock fs-1 text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Security</h5>
+                        <p class="text-muted">Enterprise-grade security to protect your website and user data.</p>
+                        <a href="services.html" class="btn btn-danger btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-card h-100 shadow-sm p-4 rounded text-center card-hover">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-headset fs-1 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">24/7 Support</h5>
+                        <p class="text-muted">Round-the-clock technical support and maintenance for peace of mind.</p>
+                        <a href="services.html" class="btn btn-primary btn-sm mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ Section ===== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>What makes TechFlow different?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We combine cutting-edge design with powerful technology to create digital experiences that truly stand out. Our team focuses on quality, innovation, and your success.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>How long does a project take?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Project timelines vary based on complexity and scope. Typically, most projects range from 2-8 weeks. We'll provide a detailed timeline during the initial consultation.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="bi bi-question-circle me-2 text-primary"></i>Do you provide ongoing support?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Absolutely! We offer comprehensive maintenance and support packages to keep your website running smoothly and secure. Choose from monthly, quarterly, or annual plans.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">Technical Skills</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- HTML -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-code me-2 text-primary"></i>HTML</span>
+                            <span class="badge bg-success">95%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success skill-bar" role="progressbar" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-palette me-2 text-info"></i>CSS</span>
+                            <span class="badge bg-info text-dark">95%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info skill-bar" role="progressbar" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-bootstrap-fill me-2 text-warning"></i>Bootstrap</span>
+                            <span class="badge bg-warning text-dark">92%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning skill-bar" role="progressbar" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tailwind CSS -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-wind me-2 text-secondary"></i>Tailwind CSS</span>
+                            <span class="badge bg-secondary">90%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary skill-bar" role="progressbar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-server me-2 text-danger"></i>PHP</span>
+                            <span class="badge bg-danger">93%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger skill-bar" role="progressbar" style="width: 93%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold"><i class="bi bi-database me-2 text-success"></i>MySQL</span>
+                            <span class="badge bg-success">91%</span>
+                        </div>
+                        <div class="progress" style="height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success skill-bar" role="progressbar" style="width: 91%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio Section ===== -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">Recent Projects</h2>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="bi bi-shop fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">E-Commerce Platform</h6>
+                            <small class="text-muted">React • Node.js • MongoDB</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="bi bi-chat-dots fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Chat Application</h6>
+                            <small class="text-muted">Vue.js • Firebase • WebSocket</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="bi bi-graph-up fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Analytics Dashboard</h6>
+                            <small class="text-muted">React • Chart.js • REST API</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="bi bi-calendar-event fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Event Management System</h6>
+                            <small class="text-muted">Next.js • PostgreSQL • Stripe</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="bi bi-heart fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Health & Wellness App</h6>
+                            <small class="text-muted">React Native • Firebase • Fitness API</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item rounded overflow-hidden shadow position-relative">
+                        <div class="portfolio-image bg-light d-flex align-items-center justify-content-center" style="height: 250px; background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <i class="bi bi-music-note fs-1 text-white"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="portfolio.html" class="btn btn-light btn-sm">
+                                <i class="bi bi-eye me-2"></i>View Project
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Music Streaming Platform</h6>
+                            <small class="text-muted">Node.js • React • AWS S3</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">Get In Touch</h2>
+            
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info p-4 bg-light rounded">
+                        <div class="mb-4">
+                            <i class="bi bi-telephone fs-3 text-primary mb-3 d-block"></i>
+                            <h6 class="fw-bold">Phone</h6>
+                            <p class="text-muted">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-envelope fs-3 text-success mb-3 d-block"></i>
+                            <h6 class="fw-bold">Email</h6>
+                            <p class="text-muted">hello@techflow.dev</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt fs-3 text-danger mb-3 d-block"></i>
+                            <h6 class="fw-bold">Location</h6>
+                            <p class="text-muted">San Francisco, CA, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <form class="contact-form p-4 bg-light rounded" id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Full Name</label>
+                            <input type="text" class="form-control border-primary-subtle" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-primary text-white">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control border-primary-subtle" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Phone Number</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-primary text-white">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <input type="tel" class="form-control border-primary-subtle" placeholder="+1 (555) 123-4567" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Subject</label>
+                            <select class="form-select border-primary-subtle" required>
+                                <option selected>Choose a subject...</option>
+                                <option value="web-design">Web Design Inquiry</option>
+                                <option value="development">Development Project</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control border-primary-subtle" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                I agree to the privacy policy and terms of service
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold btn-submit">
+                            <i class="bi bi-send me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row mb-4">
+                <!-- Brand -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 fw-bold">
+                        <i class="bi bi-lightning-charge me-2"></i>TechFlow
+                    </h5>
+                    <p class="text-muted small">Building the future of web design and development, one project at a time.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="mb-3 fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none footer-link">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-light text-decoration-none footer-link">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-light text-decoration-none footer-link">Portfolio</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-light text-decoration-none footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="mb-3 fw-bold">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5 social-icon" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-light fs-5 social-icon" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center text-muted small">
+                <p class="mb-0">© 2025 TechFlow. All rights reserved. | Built with <i class="bi bi-heart-fill text-danger"></i> by our team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</div>
+   </div>
+   </div>
+    </section>
+    
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+<!-- Bootstrap Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+
+</body>
+</html>
